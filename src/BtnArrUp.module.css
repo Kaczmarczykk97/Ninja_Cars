@@ -1,4 +1,4 @@
-button {
+.btnArrowUp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,17 +13,17 @@ button {
   transition: all 0.3s;
 }
 
-.icon {
+.iconBtnArrowUp {
   width: 2rem;
   height: 2rem;
   transition: all 0.3s;
 }
 
-button:hover {
+.btnArrowUp:hover {
   transform: scale(1.05);
   box-shadow: 0 0 1rem #fff;
 }
 
-button:hover .icon {
+.btnArrowUp:hover .iconBtnArrowUp {
   transform: scale(1.05);
 }

@@ -11,8 +11,8 @@ function BtnArrUp() {
   };
 
   return (
-    <button onClick={scrollToTop}>
-      <BiSolidUpArrow className={classes.icon} />
+    <button onClick={scrollToTop} className={classes.btnArrowUp}>
+      <BiSolidUpArrow className={classes.iconBtnArrowUp} />
     </button>
   );
 }
