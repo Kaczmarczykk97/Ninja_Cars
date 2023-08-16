@@ -1,0 +1,157 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.itemContainer {
+  text-align: center;
+}
+
+.imgContainer {
+  width: 25rem;
+  height: 25rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--second-color-dark);
+  cursor: pointer;
+  box-shadow: 0 0 0.4rem #fff;
+}
+
+.imgContainer:hover img {
+  transform: scale(1.1);
+}
+
+.imgContainer img {
+  width: 80%;
+  transition: all 0.6s;
+}
+
+.itemAbout {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.textContainer {
+  width: 90%;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 0.6rem;
+  border-radius: 1rem;
+  background-color: var(--main-color-light);
+}
+
+.textContainer .icon {
+  font-size: 4.5rem;
+  color: var(--second-color);
+}
+
+.textContainer h4 {
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.textContainer p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .imgContainer {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .textContainer .icon {
+    font-size: 3.5rem;
+  }
+
+  .textContainer h4 {
+    font-size: 1.5rem;
+  }
+
+  .textContainer p {
+    font-size: 1.3rem;
+  }
+
+  .textContainer {
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 548px) {
+  .textContainer .icon {
+    font-size: 4.5rem;
+  }
+
+  .textContainer h4 {
+    font-size: 1.7rem;
+  }
+
+  .textContainer p {
+    font-size: 1.5rem;
+  }
+
+  .textContainer {
+    gap: 1.5rem;
+    width: 75%;
+    margin-top: 0;
+  }
+
+  .imgContainer {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .textContainer {
+    gap: 1.3rem;
+    width: 80%;
+  }
+
+  .imgContainer {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .imgContainer {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  .textContainer {
+    gap: 1rem;
+  }
+
+  .textContainer .icon {
+    font-size: 3.75rem;
+  }
+
+  .textContainer h4 {
+    font-size: 1.6rem;
+  }
+
+  .textContainer p {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,29 @@
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 3rem;
+  margin: 0 3rem 0 auto;
+  background-color: var(--second-color);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 1rem #fff;
+}
+
+button:hover .icon {
+  transform: scale(1.05);
+}

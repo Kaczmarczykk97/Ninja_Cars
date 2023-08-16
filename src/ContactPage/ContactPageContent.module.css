@@ -1,0 +1,253 @@
+.sectionContact {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  padding: 8rem 4rem 0 4rem;
+}
+
+.sectionTitle {
+  font-size: 4rem;
+  text-transform: uppercase;
+  height: 4rem;
+}
+
+.contactWrapper {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26.5rem, 1fr));
+  background-color: var(--main-color-light);
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 2rem;
+  overflow: hidden;
+  border: 1px solid #fff;
+  box-shadow: 0 0 2rem #fff;
+}
+
+.contactCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 6rem 4rem 2rem 4rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contactCard {
+  padding: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactCard .iconContainer {
+  background-color: var(--second-color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: 0 0 2rem #fff;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.contactCard h2 {
+  opacity: 0;
+  font-size: 1.6rem;
+  text-shadow: -0.2rem -0.2rem 0 #000;
+  transform: translateY(-1rem);
+  transition: all 0.3s linear;
+}
+
+.contactCard h3 {
+  opacity: 0;
+  font-size: 1.5rem;
+  text-shadow: -0.2rem -0.2rem 0 #000;
+  transform: translateY(-1rem);
+  transition: all 0.3s linear;
+}
+
+.contactCard .iconContainer:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+}
+
+.contactCard .iconContainer:hover .icon {
+  color: var(--second-color-dark);
+}
+
+.iconContainer:hover ~ h2,
+.iconContainer:hover ~ h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.icon {
+  width: 7rem;
+  height: 7rem;
+  transition: all 0.6s;
+}
+
+.map {
+  height: 45rem;
+  position: relative;
+}
+
+.map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8rem;
+  height: 8rem;
+  animation: spin 1s linear infinite;
+}
+
+@media (max-width: 1000px) {
+  .contactWrapper {
+    width: 85%;
+    height: 40rem;
+  }
+
+  .sectionTitle {
+    transform: translateY(2rem);
+  }
+
+  .contactCards {
+    padding: 1rem 2rem;
+  }
+
+  .map {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .sectionTitle {
+    font-size: 3.5rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .sectionContact {
+    padding: 8rem 2rem 0 2rem;
+  }
+
+  .contactWrapper {
+    width: 95%;
+  }
+}
+
+@media (max-width: 700px) {
+  .contactCard h2 {
+    font-size: 1.4rem;
+  }
+
+  .contactCard h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .sectionContact {
+    padding: 4rem 2rem 0 2rem;
+  }
+
+  .contactWrapper {
+    width: 85%;
+    height: 45rem;
+  }
+
+  .contactCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 100%;
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  .map {
+    height: 45rem;
+  }
+
+  .contactCard .iconContainer {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  .icon {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .contactCard h2 {
+    font-size: 1.2rem;
+  }
+
+  .contactCard h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 548px) {
+  .sectionContact {
+    padding: 8rem 2rem 0 2rem;
+  }
+
+  .sectionTitle {
+    margin-bottom: 6rem;
+  }
+
+  .contactWrapper {
+    height: 55rem;
+  }
+
+  .map {
+    height: 55rem;
+  }
+}
+
+@media (max-width: 519px) {
+  .contactWrapper {
+    height: 60rem;
+  }
+
+  .map {
+    height: 60rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .contactWrapper {
+    width: 90%;
+  }
+
+  .sectionContact {
+    padding: 8rem 0 0 0;
+  }
+
+  .sectionTitle {
+    margin-left: 2rem;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

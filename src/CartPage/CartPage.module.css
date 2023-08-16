@@ -1,0 +1,151 @@
+.sectionCart {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9rem 4rem 0 4rem;
+  text-align: center;
+}
+
+.productsContainer {
+  width: 60%;
+  padding: 0 1rem 3rem 1rem;
+  background-color: var(--font-color);
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+.productsContainer.empty {
+  background-color: transparent;
+}
+
+.cartHeading {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.emptyCart {
+  width: 85%;
+  filter: brightness(0) invert(1);
+}
+
+.cartTotalPrice {
+  text-align: right;
+  font-size: 2.5rem;
+  color: var(--second-color);
+  font-weight: 700;
+  text-shadow: 0 0 1.5rem #000;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .productsContainer {
+    width: 70%;
+    margin-top: 1rem;
+  }
+  .cartHeading {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .sectionCart {
+    padding: 9rem 3.75rem 0 3.5rem;
+  }
+
+  .productsContainer {
+    width: 77.5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sectionCart {
+    padding: 9rem 3.25rem 0 3rem;
+  }
+
+  .productsContainer {
+    width: 85%;
+    padding: 0 1rem 1.5rem 1rem;
+  }
+
+  .cartHeading {
+    margin-bottom: 1rem;
+  }
+
+  .cartTotalPrice {
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .sectionCart {
+    padding: 9rem 2.75rem 0 2.5rem;
+  }
+
+  .productsContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .sectionCart {
+    padding: 9rem 2rem 0 1.75rem;
+  }
+
+  .productsContainer {
+    width: 95%;
+  }
+
+  .cartHeading {
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  .cartTotalPrice {
+    font-size: 2.05rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .productsContainer {
+    width: 65%;
+  }
+
+  .cartTotalPrice {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .productsContainer {
+    width: 75%;
+  }
+
+  .cartTotalPrice {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .productsContainer {
+    width: 85%;
+  }
+
+  .cartHeading {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .productsContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .cartHeading {
+    font-size: 3rem;
+  }
+}

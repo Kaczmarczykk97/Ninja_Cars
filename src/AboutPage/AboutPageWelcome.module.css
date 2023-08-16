@@ -1,0 +1,100 @@
+.welcomeCard,
+.welcomeCardNewsAndHours {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.welcomeCard .cardImgContainer {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.welcomeCard .cardImgContainer img {
+  width: 100%;
+}
+
+.welcomeCard .welcomeCardText {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.welcomeBtn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  width: 50%;
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  transform: skew(-10deg);
+  background-color: var(--second-color);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.welcomeBtn:hover {
+  transform: skew(-10deg) translateY(-3px);
+  box-shadow: 0 0 2rem #fff;
+}
+
+.welcomeCardNewsAndHours {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.cardNews {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.cardNewsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcomeH4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.dateContainer {
+  padding: 1rem 2rem;
+  background-color: var(--main-color-light);
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.dateContainerText {
+  font-size: 1.6rem;
+}
+
+.cardHours {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hoursContainer {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img//stopWatch.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  padding: 4rem 0.5rem;
+}
+
+.mapContainer img {
+  width: 100%;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+@media (max-width: 450px) {
+}

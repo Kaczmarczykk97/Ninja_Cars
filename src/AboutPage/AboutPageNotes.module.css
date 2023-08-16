@@ -1,0 +1,84 @@
+.noteWrapper {
+  background-color: var(--main-color-light);
+  height: 100%;
+  position: relative;
+}
+
+.noteWrapper::after,
+.noteWrapper::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4rem;
+  height: 4rem;
+}
+
+.noteWrapper::after {
+  background-color: var(--font-color-dark);
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+.noteWrapper::before {
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  background-color: var(--main-color);
+}
+
+.noteImgContainer {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.noteImgContainer:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.85);
+}
+
+.noteImgContainer img {
+  width: 100%;
+  border-bottom: 5px solid var(--second-color);
+  filter: brightness(0.7);
+  transition: all 0.3s;
+  will-change: transfrom;
+}
+
+.noteTextContainer {
+  padding: 0.5rem 5.5rem 2rem 1rem;
+}
+
+.noteTextContainer .noteTextH3 {
+  font-size: 2rem;
+  line-height: 0.9;
+  margin-top: 1rem;
+}
+
+.noteTextContainer .noteTextH4 {
+  font-size: 1.7rem;
+  color: var(--font-color-dark);
+}
+
+.noteTextContainer .noteTextP {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+@media (max-width: 719px) {
+  .noteWrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .noteWrapper {
+    width: 85%;
+  }
+}
+
+@media (max-width: 450px) {
+  .noteWrapper {
+    width: 90%;
+  }
+}

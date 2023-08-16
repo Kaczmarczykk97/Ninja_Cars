@@ -1,0 +1,184 @@
+.aboutHeader {
+  height: 100vh;
+  width: 100vw;
+  padding: 14rem 5rem 0 5rem;
+  background-image: url(../img/aboutHeader.jpg);
+  background-position: right;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.sliderTextWrapper {
+  position: absolute;
+  left: 3rem;
+  top: 30%;
+  background-color: rgba(42, 211, 26, 0.06);
+  box-shadow: 0 0 2rem #fff;
+  width: 25rem;
+  border-radius: 1rem;
+  padding: 4rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.textContainer .textContainerH2 {
+  font-size: 2.5rem;
+  line-height: 0.9;
+  color: #fff;
+}
+
+.textContainer .textContainerH2 span {
+  color: var(--second-color);
+}
+
+.textContainer .textContainerH3 {
+  font-size: 1.75rem;
+  color: var(--font-color);
+}
+
+.textContainer .aboutUs {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+
+.textContainer .aboutUs .icon {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.textContainer .aboutUs .textContainerText {
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: justify;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .sliderTextWrapper {
+    width: 22.5rem;
+  }
+
+  .textContainer .textContainerH2 {
+    font-size: 2.25rem;
+  }
+
+  .textContainer .textContainerH3 {
+    font-size: 1.5rem;
+  }
+
+  .textContainer .aboutUs .icon {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .sliderTextWrapper {
+    top: 80%;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 2rem 1rem 2rem;
+    background-color: rgba(42, 211, 26, 0.1);
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .titleWrapper {
+    min-width: max-content;
+  }
+
+  .aboutUsWrapper {
+    display: grid;
+    width: 100%;
+    column-gap: 2rem;
+    row-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .sliderTextWrapper {
+    width: 95%;
+  }
+
+  .aboutUsWrapper {
+    column-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+
+  .textContainer .textContainerH2 {
+    font-size: 2rem;
+  }
+
+  .textContainer .textContainerH3 {
+    font-size: 1.25rem;
+  }
+
+  .textContainer .aboutUs .icon {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  .textContainer .aboutUs .textContainerText {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutHeader {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 550px) {
+  .sliderTextWrapper {
+    top: 15%;
+    width: max-content;
+    left: 2rem;
+    transform: translateX(0);
+    padding: 2rem 1rem;
+  }
+
+  .textContainer {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .aboutUsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .textContainer .textContainerH3 {
+    font-size: 1.5rem;
+  }
+
+  .textContainer .aboutUs .textContainerText {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .sliderTextWrapper {
+    left: 1.5rem;
+  }
+}
