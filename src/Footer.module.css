@@ -55,12 +55,12 @@ footer {
   display: inline-block;
   padding: 1rem;
   background-color: var(--main-color);
-  border: 1px solid #fff;
+  border: var(--border-small)
 }
 
 .about .socials button:hover {
   transform: scale(1.1) translateY(-0.5rem);
-  box-shadow: 0 0 1rem #fff;
+  box-shadow: var(--box-shadow-small)
 }
 
 .about .socials button a .icon {
@@ -104,7 +104,7 @@ footer {
 .site ul li a {
   font-size: 1.5rem;
   text-decoration: none;
-  color: #fff;
+  color: var(--font-color-lightest);
 }
 
 .siteIcon {

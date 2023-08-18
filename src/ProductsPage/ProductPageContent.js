@@ -4,11 +4,18 @@ import ProductPageProduct from "./ProductPageProduct";
 
 import classes from "./ProductPageContent.module.css";
 
+import { BsSearch } from "react-icons/bs";
+
 const categories = ["Sedan", "Suv", "Hatchback", "Motorbike"];
 
 function ProductPageContent({ products, dispatch, dispatchCart }) {
   const [filter, setFilter] = useState("");
+  const [search, setSearch] = useState("");
   const [all, setAll] = useState(true);
+
+  const filteredProducts = products.filter((product) => {
+    return product.text.toLowerCase().includes(search.toLowerCase());
+  });
 
   const filterHandler = (category) => {
     setFilter(category);
@@ -53,10 +60,20 @@ function ProductPageContent({ products, dispatch, dispatchCart }) {
           >
             All Products
           </button>
+
+          <div className={classes.searchBarContainer}>
+            <input
+              type="search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className={classes.searchBar}
+            />
+            <BsSearch className={classes.searchIcon} />
+          </div>
         </div>
         <div className={classes.productsWrapper}>
           {all &&
-            products.map((product) => {
+            filteredProducts.map((product) => {
               return (
                 <ProductPageProduct
                   content={product}
@@ -67,7 +84,7 @@ function ProductPageContent({ products, dispatch, dispatchCart }) {
               );
             })}
           {!all &&
-            products
+            filteredProducts
               .filter((product) => product.title === filter)
               .map((product) => {
                 return (

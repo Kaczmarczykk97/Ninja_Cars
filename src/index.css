@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
-  color: var(--font-color-light);
+  color: var(--font-color-lightest);
   background-color: var(--main-color);
 }
 
@@ -27,9 +27,16 @@ body {
   --second-color: #d8ff43;
   --second-color-dark: #90aa2d;
 
+  --font-color-lightest: #fcfcfc;
   --font-color-light: #f2f2f2;
   --font-color: #cecece;
   --font-color-dark: #acacac;
+
+  --border-small: 1px solid var(--font-color-lightest);
+
+  --box-shadow-big: 0 0 2rem var(--font-color-lightest);
+  --box-shadow-medium: 0 0 1.5rem var(--font-color-lightest);
+  --box-shadow-small: 0 0 1rem var(--font-color-lightest);
 }
 
 ::-webkit-scrollbar {

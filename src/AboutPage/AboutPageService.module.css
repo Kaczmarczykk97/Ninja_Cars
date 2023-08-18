@@ -39,7 +39,7 @@ hr {
 
 .readMoreBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 1rem #fff;
+  box-shadow: var(--box-shadow-small)
 }
 
 @media (max-width: 421px) {

@@ -15,7 +15,7 @@
   left: 3rem;
   top: 30%;
   background-color: rgba(42, 211, 26, 0.06);
-  box-shadow: 0 0 2rem #fff;
+  box-shadow: var(--box-shadow-big);
   width: 25rem;
   border-radius: 1rem;
   padding: 4rem 2rem 2rem 2rem;
@@ -32,7 +32,7 @@
 .textContainer .textContainerH2 {
   font-size: 2.5rem;
   line-height: 0.9;
-  color: #fff;
+  color: var(--font-color-lightest);
 }
 
 .textContainer .textContainerH2 span {
@@ -58,7 +58,7 @@
 
 .textContainer .aboutUs .textContainerText {
   font-size: 1.6rem;
-  color: #fff;
+  color: var(--font-color-lightest);
   text-align: justify;
   font-weight: 500;
 }

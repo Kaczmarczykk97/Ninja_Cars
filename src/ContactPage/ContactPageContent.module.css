@@ -21,8 +21,8 @@
   padding: 0;
   border-radius: 2rem;
   overflow: hidden;
-  border: 1px solid #fff;
-  box-shadow: 0 0 2rem #fff;
+  border: var(--border-small);
+  box-shadow: var(--box-shadow-big);
 }
 
 .contactCards {
@@ -51,8 +51,8 @@
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  border: 1px solid #fff;
-  box-shadow: 0 0 2rem #fff;
+  border: var(--border-small);
+  box-shadow: var(--box-shadow-big);
   margin-bottom: 1rem;
   cursor: pointer;
   transition: all 0.6s;

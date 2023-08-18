@@ -35,8 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 8rem;
-  padding-right: 3rem;
+  padding: 8rem 3rem 0 0;
   min-width: 40rem;
 }
 
@@ -51,10 +50,11 @@
   margin-top: 2rem;
 }
 
+/*BUTTON STYLE*/
 .my-super-cool-btn {
   position: relative;
   text-decoration: none;
-  color: #fff;
+  color: var(--font-color-lightest);
   letter-spacing: 1px;
   font-size: 2rem;
 }
@@ -147,6 +147,8 @@
   animation: swag4 0.3s;
   animation-fill-mode: forwards;
 }
+
+/*MEDIA*/
 
 @media (max-width: 1150px) {
   .textContainer h1 {

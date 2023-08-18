@@ -92,7 +92,7 @@
   font-size: 2rem;
   height: 3rem;
   width: 4.5rem;
-  color: #fff;
+  color: var(--font-color-lightest);
   cursor: pointer;
 }
 

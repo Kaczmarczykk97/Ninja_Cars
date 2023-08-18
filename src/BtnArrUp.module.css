@@ -11,6 +11,7 @@
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s;
+  border: 1px solid #000;
 }
 
 .iconBtnArrowUp {
@@ -21,7 +22,7 @@
 
 .btnArrowUp:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 1rem #fff;
+  box-shadow: var(--box-shadow-small)
 }
 
 .btnArrowUp:hover .iconBtnArrowUp {

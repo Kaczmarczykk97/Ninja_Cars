@@ -35,7 +35,7 @@
 
 .welcomeBtn:hover {
   transform: skew(-10deg) translateY(-3px);
-  box-shadow: 0 0 2rem #fff;
+  box-shadow: var(--box-shadow-big);
 }
 
 .welcomeCardNewsAndHours {
