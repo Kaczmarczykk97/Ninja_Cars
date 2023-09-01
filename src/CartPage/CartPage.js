@@ -2,9 +2,11 @@ import { useState } from "react";
 
 import CartPageProduct from "./CartPageProduct";
 
-import emptyCart2 from "../img/emptyCart2.png";
+//Styles
+import classes from "./cart-page-styles/CartPage.module.css";
 
-import classes from "./CartPage.module.css";
+//Imgs
+import emptyCart2 from "../img/emptyCart2.png";
 
 function CartPage({ cartProducts, dispatchCart }) {
   const [allAddedPrice, setAllAddedPrice] = useState(0);

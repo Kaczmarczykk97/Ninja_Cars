@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
 
-import Navigation from "./Navaigation";
-import Footer from "./Footer";
-import BtnArrUp from "./BtnArrUp";
+import Navigation from "./Root/navigation/Navaigation";
+import Footer from "./Root/footer/Footer";
+import BtnArrUp from "./Root/button-up/BtnArrUp";
 
 function RootLayout({ products, dispatch, cartProducts }) {
   return (

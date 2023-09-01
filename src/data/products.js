@@ -1,11 +1,11 @@
-import product1 from "./img/product1.png";
-import product2 from "./img/product2.png";
-import product3 from "./img/product3.png";
-import product4 from "./img/product4.png";
-import product5 from "./img/product5.png";
-import product6 from "./img/product6.png";
-import product7 from "./img/product7.png";
-import product8 from "./img/product8.png";
+import product1 from "../img/product1.png";
+import product2 from "../img/product2.png";
+import product3 from "../img/product3.png";
+import product4 from "../img/product4.png";
+import product5 from "../img/product5.png";
+import product6 from "../img/product6.png";
+import product7 from "../img/product7.png";
+import product8 from "../img/product8.png";
 
 const Products = [
   {

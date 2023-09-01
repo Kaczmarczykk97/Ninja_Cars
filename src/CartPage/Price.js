@@ -1,4 +1,6 @@
-import classes from "./CartPage.module.css";
+//Styles
+import classes from "./cart-page-styles/CartPage.module.css";
+
 function Price({ allAddedPrice }) {
   return (
     <h2 className={classes.cartTotalPrice}>

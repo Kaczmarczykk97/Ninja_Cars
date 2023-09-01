@@ -1,12 +1,14 @@
 import { useState } from "react";
 
-import ModalProduct from "../ModalProduct";
+import ModalProduct from "../Modals/ModalProduct";
 
+//Styles
+import classes from "./home-page-styles/HomePageTopProduct.module.css";
+
+//Icons
 import { AiFillHeart } from "react-icons/ai";
 import { BsFillCartFill } from "react-icons/bs";
 import { FaEye } from "react-icons/fa";
-
-import classes from "./HomePageTopProduct.module.css";
 
 function HomePageTopProduct({ content, dispatch, dispatchCart }) {
   const [openModal, setOpenModal] = useState(false);

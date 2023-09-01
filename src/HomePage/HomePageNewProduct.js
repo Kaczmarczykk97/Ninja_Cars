@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom";
 
-import classes from "./HomePageNewProduct.module.css";
+//Styles
+import classes from "./home-page-styles/HomePageNewProduct.module.css";
 
+//Imgs
 import newProduct from "../img/newProduct.png";
 
+//Icons
 import { GiCarWheel } from "react-icons/gi";
 
 function HomePageNewProduct() {

@@ -1,5 +1,7 @@
-import classes from "./AboutPageHeader.module.css";
+//Styles
+import classes from "./about-page-styles/AboutPageHeader.module.css";
 
+//Icons
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { FaSmileBeam } from "react-icons/fa";
 import { GiLaurelCrown } from "react-icons/gi";

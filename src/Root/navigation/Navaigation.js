@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import Modal from "./Modals/Modal";
+import Modal from "../../Modals/Modal";
 
 import { NavLink } from "react-router-dom";
 import { AiFillHeart } from "react-icons/ai";
@@ -10,7 +10,7 @@ import { FaBars } from "react-icons/fa";
 import { GrClose } from "react-icons/gr";
 
 import classes from "./Navigation.module.css";
-import logo from "./img/logo.png";
+import logo from "../../img/logo.png";
 
 function Navigation({ products, dispatch, cartProducts }) {
   const [openModal, setOpenModal] = useState(false);

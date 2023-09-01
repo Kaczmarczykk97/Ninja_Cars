@@ -1,9 +1,13 @@
 import { useState } from "react";
 
-import { MdPhone, MdMail } from "react-icons/md";
+//Styles
+import classes from "./contact-page-styles/ContactPageContent.module.css";
+
+//Imgs
 import spinner from "../img/spinner.png";
 
-import classes from "./ContactPageContent.module.css";
+//Icons
+import { MdPhone, MdMail } from "react-icons/md";
 
 function ContactPageContent() {
   const [mapLoaded, setMapLoaded] = useState(false);

@@ -1,9 +1,5 @@
-// import { RouterProvider, createBrowserRouter } from "react-router-dom";
-// import { useReducer } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 import React, { useReducer } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom"; // Zmieniono importy
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -14,8 +10,8 @@ import ProductPage from "./ProductsPage/ProductPage";
 import ContactPage from "./ContactPage/ContactPage";
 import CartPage from "./CartPage/CartPage";
 
-import Products from "./products";
-import allProducts from "./allProducts";
+import Products from "./data/products";
+import allProducts from "./data/allProducts";
 
 import ScrollToTop from "./ScrollTop";
 

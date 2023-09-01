@@ -1,6 +1,7 @@
 import HomePageItem from "./HomePageItem";
 
-import classes from "./HomePageItems.module.css";
+//Styles
+import classes from "./home-page-styles/HomePageItems.module.css";
 
 //Icons
 import { CiDeliveryTruck } from "react-icons/ci";

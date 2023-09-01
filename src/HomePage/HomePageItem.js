@@ -1,4 +1,5 @@
-import classes from "./HomePageItem.module.css";
+//Styles
+import classes from "./home-page-styles/HomePageItem.module.css";
 
 function HomePageItem({ data }) {
   return (

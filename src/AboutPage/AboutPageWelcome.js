@@ -1,5 +1,7 @@
-import classes from "./AboutPageWelcome.module.css";
+//Styles
+import classes from "./about-page-styles/AboutPageWelcome.module.css";
 
+//Imgs
 import welcome from "../img/welcome.jpg";
 import map from "../img/map.jpg";
 

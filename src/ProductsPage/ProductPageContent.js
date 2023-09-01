@@ -2,8 +2,10 @@ import { useState } from "react";
 
 import ProductPageProduct from "./ProductPageProduct";
 
-import classes from "./ProductPageContent.module.css";
+//Styles
+import classes from "./product-page-styles/ProductPageContent.module.css";
 
+//Icons
 import { BsSearch } from "react-icons/bs";
 
 const categories = ["Sedan", "Suv", "Hatchback", "Motorbike"];

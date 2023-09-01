@@ -1,4 +1,5 @@
-import classes from "./AboutPageNotes.module.css";
+//Styles
+import classes from "./about-page-styles/AboutPageNotes.module.css";
 
 function AboutPageNotes({ noteContent }) {
   return (

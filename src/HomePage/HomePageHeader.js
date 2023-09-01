@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
 
-import classes from "./HomePageHeader.module.css";
+//Styles
+import classes from "./home-page-styles/HomePageHeader.module.css";
 
+//Imgs
 import header from "../img/header.png";
 
 function HomePageHeader() {

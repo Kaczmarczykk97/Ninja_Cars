@@ -1,7 +1,9 @@
 import { useState } from "react";
 
-import classes from "./CartPageProduct.module.css";
+//Styles
+import classes from "./cart-page-styles/CartPageProduct.module.css";
 
+//Icons
 import { FaTrash } from "react-icons/fa";
 
 function CartPageProduct({ content, dispatchCart, addTotalPrice }) {

@@ -1,9 +1,11 @@
 import { useState } from "react";
 
-import ModalProduct from "../ModalProduct";
+import ModalProduct from "../Modals/ModalProduct";
 
-import classes from "./ProductPageProduct.module.css";
+//Styles
+import classes from "./product-page-styles/ProductPageProduct.module.css";
 
+//Icons
 import { AiFillHeart } from "react-icons/ai";
 import { BsFillCartFill } from "react-icons/bs";
 import { FaEye } from "react-icons/fa";

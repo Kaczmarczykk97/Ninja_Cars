@@ -1,4 +1,5 @@
-import classes from "./AboutPageService.module.css";
+//Styles
+import classes from "./about-page-styles/AboutPageService.module.css";
 
 function AboutPageService({ serviceContent }) {
   return (

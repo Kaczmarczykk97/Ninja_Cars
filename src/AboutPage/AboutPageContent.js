@@ -4,10 +4,12 @@ import AboutPageService from "./AboutPageService";
 import AboutPageWelcome from "./AboutPageWelcome";
 import AboutPageQA from "./AboutPageQA";
 
-import classes from "./AboutPageContent.module.css";
+//Styles
+import classes from "./about-page-styles/AboutPageContent.module.css";
 
-import notes from "./notes";
-import services from "./services";
+//Data
+import notes from "../data/notes.js";
+import services from "../data/services.js";
 
 const questionsAndAnswears = [
   {

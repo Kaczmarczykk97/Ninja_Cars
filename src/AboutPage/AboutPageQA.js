@@ -1,9 +1,12 @@
 import { useState } from "react";
 
-import classes from "./AboutPageQA.module.css";
+//Styles
+import classes from "./about-page-styles/AboutPageQA.module.css";
 
+//Icons
 import { BiSolidUpArrow } from "react-icons/bi";
 
+//Open answear function
 function AboutPageQA({ QA }) {
   const [open, setOpen] = useState(false);
 

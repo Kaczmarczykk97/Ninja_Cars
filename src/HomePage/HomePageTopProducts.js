@@ -1,6 +1,7 @@
 import HomePageTopProduct from "./HomePageTopProduct";
 
-import classes from "./HomePageTopProducts.module.css";
+//Styles
+import classes from "./home-page-styles/HomePageTopProducts.module.css";
 
 function HomePageTopProducts({ topProducts, dispatch, dispatchCart }) {
   return (
